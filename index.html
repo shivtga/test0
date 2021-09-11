@@ -1,0 +1,22 @@
+
+<html>
+<body>
+
+    <style>
+        p{
+            font-family: Arial;
+        }
+    </style>
+    <div>
+        <p><b>Your window size is: </b>&nbsp;<p id="filler"></p></p>
+    </div>
+    <script>
+        var width = window.innerWidth;
+        var height = window.innerHeight;
+
+        var dimensions = width+"x"+height;
+
+        document.getElementById('filler').innerHTML = dimensions;
+    </script>
+</body>
+</html>
